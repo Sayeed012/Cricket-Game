@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;  /* Centers content vertically */
+  align-items: center;  /* Centers content horizontally */
+  text-align: center;
+  position: relative;
+  background: url('images/background-image.jpg') no-repeat center center/cover;
+}
+
+
+.choice-button {
+  height: 100px;
+  width: 100px;
+  background: rgba(255, 255, 255, 0.2); /* Slight transparency */
+  border: 6px solid rgb(255, 255, 255);
+  box-shadow: 5px 3px 2px rgb(0, 0, 0);
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.choice-button:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.choice-button:active {
+  transform: scale(0.9); /* Slightly shrink the button */
+  background-color: rgb(100, 100, 100); /* Darker color on click */
+  box-shadow: 2px 1px 2px rgb(75, 75, 75); /* Reduce shadow */
+}
+
+/* Make images inside buttons responsive */
+.choice-image {
+  height: 70px;
+  
+}
+
+/* Style text */
+h1, h3 {
+  font-family: cursive;
+  font-weight: 700;
+  color: rgb(255, 0, 0);
+  text-shadow: 3px 2px 2px rgb(0, 0, 0);
+}
+.reset {
+  font-family:cursive;
+  color: rgb(255, 0, 0);
+  text-shadow: 3px 2px 2px rgb(0, 0, 0);
+  font-size: larger;
+  height: 40px;
+  border: 4px solid white;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 3px 2px rgb(0, 0, 0);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.reset:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.reset:active {
+  transform: scale(0.9); /* Slightly shrink the button */
+  background-color: rgb(100, 100, 100); /* Darker color on click */
+  box-shadow: 2px 1px 2px rgb(75, 75, 75); /* Reduce shadow */
+}

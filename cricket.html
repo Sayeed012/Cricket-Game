@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Game</title>
+  <link rel="stylesheet" href="cricket.css">
+</head>
+<body>
+  <header></header>
+  <main>
+    
+    <h1><big>Bat Ball Stump Game</big></h1>
+    <button class="choice-button" onclick="
+    //This will generate a random number between 0 and 3
+    let computerChoice = generateComputerChoice();
+    let resultMsg = getResult('Bat', computerChoice);
+    showResult('Bat', computerChoice, resultMsg);
+    "><img class="choice-image" src="images/bat.png" alt="Bat Image"></button>
+
+    <button class="choice-button" onclick="
+    //This will generate a random number between 0 and 3
+    computerChoice = generateComputerChoice();
+    resultMsg = getResult('Ball', computerChoice);
+    showResult('Ball', computerChoice, resultMsg);
+    "><img class="choice-image" src="images/ball.png" alt="Ball Image"></button>
+    
+    <button class="choice-button" onclick="
+    //This will generate a random number between 0 and 3
+    computerChoice = generateComputerChoice();
+    resultMsg = getResult('Stump', computerChoice);
+    showResult('Stump', computerChoice, resultMsg);
+    "><img class="choice-image" src="images/stump.png" alt="Stump Image"></button>
+
+   
+
+    <h3 id="user-move"></h3>
+    <h3 id="computer-move"></h3>
+    <h3 id="result"></h3>
+    <h3 id="score"></h3>
+
+    <button class="reset" onclick="localStorage.clear()
+    resetScore();
+    ">🔄Reset</button>
+    
+    
+
+  </main>
+
+  <footer></footer>
+
+  <script src="cricket.js"></script>
+</body>
+</html>
